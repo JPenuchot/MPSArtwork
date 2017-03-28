@@ -1,0 +1,13 @@
+# IDE files
+
+.idea/
+
+# Build files
+
+target/
+build/
+.build/
+
+# Other
+
+tmp/
