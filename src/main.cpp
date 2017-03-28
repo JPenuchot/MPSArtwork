@@ -2,8 +2,8 @@
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 
-#include "Grid.h"
-#include "Renderer.h"
+#include "Grid.hpp"
+#include "Renderer.hpp"
 
 int main() {
     Grid grid(100, 100, new Renderer(100, 100, &grid));

@@ -7,9 +7,9 @@
 #include <iostream>
 #include <random>
 
-#include "Grid.h"
-#include "Renderer.h"
-#include "CellsBehaviorConstants.h"
+#include "Grid.hpp"
+#include "Renderer.hpp"
+#include "CellsBehaviorConstants.hpp"
 
 void Grid::iterate() {
     int size = this->w * this->h;

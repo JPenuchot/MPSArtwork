@@ -1,14 +1,9 @@
-//
-// Created by jpenuchot on 11/19/16.
-//
-
-#ifndef MPSARTWORK_GRID_H
-#define MPSARTWORK_GRID_H
+#pragma once
 
 #include <glob.h>
 #include <random>
 
-#include "StateDataStructure.h"
+#include "StateDataStructure.hpp"
 
 class Renderer;
 
@@ -66,6 +61,3 @@ private:
      */
     State init_cell(int i, int j);
 };
-
-
-#endif //MPSARTWORK_GRID_H

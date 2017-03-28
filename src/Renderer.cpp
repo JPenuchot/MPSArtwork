@@ -1,14 +1,10 @@
-//
-// Created by jpenuchot on 11/19/16.
-//
-
 #include <iostream>
 
 #include <opencv2/highgui.hpp>
 #include <opencv2/core.hpp>
 
-#include "Renderer.h"
-#include "Grid.h"
+#include "Renderer.hpp"
+#include "Grid.hpp"
 
 using namespace cv;
 
