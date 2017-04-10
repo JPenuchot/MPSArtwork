@@ -42,8 +42,8 @@ void Renderer::render(State *stateBuff) {
         }
     }
 
-    cv::imshow("Rendu", this->img);
-    //vr.write(this->img);
+    //cv::imshow("Rendu", this->img);
+    vr.write(this->img);
 }
 
 Renderer::Renderer(size_t w, size_t h, Grid* grid):
@@ -51,10 +51,10 @@ w(w),
 h(h),
 grid(grid){
     this->img = cv::Mat(h, w, CV_8UC3);
-    namedWindow("Rendu", CV_WINDOW_NORMAL | CV_WINDOW_KEEPRATIO | CV_GUI_EXPANDED);
-    //this->vr = VideoWriter("render.avi", CV_FOURCC('X', '2', '6', '4'), 60., CvSize(h, w));
+    //namedWindow("Rendu", CV_WINDOW_NORMAL | CV_WINDOW_KEEPRATIO | CV_GUI_EXPANDED);
+    this->vr.open("render.avi", CV_FOURCC('X', '2', '6', '4'), 30., this->img.size());
 }
 
 Renderer::~Renderer() {
-    
+    this->vr.release();
 }

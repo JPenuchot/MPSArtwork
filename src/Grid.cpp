@@ -56,6 +56,7 @@ Grid::Grid(int w, int h, Renderer* renderer):
 Grid::~Grid(){
 	delete[] this->prevBuff;
 	delete[] this->newBuff;
+	delete this->renderer;
 }
 
 State Grid::iterate_cell(int i, int j) {
