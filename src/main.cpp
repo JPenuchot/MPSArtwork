@@ -6,7 +6,7 @@
 #include "Renderer.hpp"
 
 int main() {
-    Grid grid(100, 100, new Renderer(100, 100, &grid));
+    Grid grid(160, 90, new Renderer(160, 90, &grid));
 
     for(int i = 0; i < 10000; i++) {
         grid.iterate();

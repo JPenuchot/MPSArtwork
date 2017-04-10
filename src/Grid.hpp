@@ -35,6 +35,8 @@ public:
     inline int getWidth(){ return this->w;}
     inline int getHeight(){ return this->h;}
 
+    ~Grid();
+
 private:
     int w, h;
 
