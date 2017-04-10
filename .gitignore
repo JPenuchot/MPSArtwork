@@ -8,6 +8,11 @@ target/
 build/
 .build/
 
+# Generated files
+
+MPSArtwork
+render.avi
+
 # Other
 
 tmp/
